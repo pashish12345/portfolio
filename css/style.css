@@ -1,0 +1,744 @@
+/*********  navbar  *********/
+
+header {
+  width: 100%;
+  height: 11em;
+  box-shadow: var(--boxshadow-);
+  background: var(--bg-primary);
+}
+
+.sticky header {
+  background: var(--bg-primary);
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: var(--boxshadow-);
+}
+.sticky .hero {
+  margin-top: 11em;
+}
+.container {
+  width: 120em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+/* ****** pace -loader *******/
+.header .pace-running .entire-content{
+  opacity: 0;
+}
+
+.pace-done .entire-content{
+  opacity: 1;
+  transition: all .3s linear;
+}
+/************** navbar logo ***********/
+
+.logo {
+  width: 20%;
+}
+
+.logo p {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/**********nav ***********/
+nav {
+  width: 40%;
+}
+
+.nav-list {
+  display: flex;
+  gap: 6em;
+  justify-content: center;
+}
+
+.nav-items > a:link,
+.nav-items > a:visited {
+  display: inline-block;
+  font-size: 1.7rem;
+  height: 11rem;
+  line-height: 11rem;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+
+.nav-list > li:hover,
+.nav-list > .nav-items a:hover {
+  color: var(--helper-);
+}
+
+/************* nav button **********/
+.nav-btn {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+}
+
+.nav-btn .header-btn {
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: transparent;
+  box-shadow: 0.6em 0.6em 0.6em rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+}
+
+.header-btn:hover {
+  transform: translateY(10%);
+}
+
+/********** drop down ********/
+.nav-items {
+  position: relative;
+}
+
+.nav-items > ul.drop-down {
+  position: absolute;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  min-width: 15em;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15em;
+  align-items: center;
+  padding: 1em 0;
+  visibility: hidden;
+  opacity: 0;
+  gap: 1em;
+  transition: all 0.3s linear;
+}
+
+/* visibility  hidden is imp to animate it. donot use display none  */
+.nav-items .nav-subitems {
+  height: 4em;
+  line-height: 4em;
+  width: 100%;
+  text-align: center;
+}
+
+.drop-down .nav-subitems a {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  width: 100%;
+}
+
+.drop-down .nav-subitems a:hover {
+  background: var(--bg-);
+  color: var(--helper-);
+}
+
+.nav-list .nav-items:hover > .drop-down {
+  visibility: visible;
+  opacity: 1;
+  top: 11em;
+}
+
+ul li a {
+  color: var(--text-main);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/************  menu  icon ******/
+
+.open-close-menu {
+  padding-top: 1.8em;
+}
+.open-close-menu {
+  width: 4em;
+  height: 11em;
+  line-height: 11em;
+  z-index: 99999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.open-close-menu a i {
+  cursor: pointer;
+  font-size: 2.8rem;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1em;
+}
+
+.header > #open-close-menu > a {
+  display: none;
+  visibility: hidden;
+}
+
+.toggle{
+  width: 40px;
+  height: 20px;
+  background-color: lime;
+  border-radius: 9px;
+  overflow: hidden;position: relative;
+}
+.parentlabel{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all .3s linear;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: limegreen;
+  
+}
+input:checked +.overlay{
+  background-color: #00aced;
+}
+.overlay::before{
+  content: '';
+position: absolute;
+top: 0;
+left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #bb0000;
+  margin: 2px 3px;
+}
+
+
+input:checked +.overlay::before{
+  transform: translateX(20px);
+}
+/**********hero section **********/
+
+main.hero {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+main.hero .main-left {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-left h2 {
+  font-size: 4rem;
+  color: darkblue;
+  font-weight: bold;
+}
+
+main.hero .main-left p {
+  font-size: 2rem;
+  color: darkblue;
+  font: 600;
+}
+
+main.hero .main-left .peter {
+  font-size: 3rem;
+  color: magenta;
+  font-weight: 800;
+}
+
+main.hero .main-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.hero .main-right > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about-section {
+  overflow-x: hidden;
+}
+.about-section .container {
+  gap: 4em;
+}
+.about-left {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section {
+  margin-bottom: 0;
+}
+.about-right {
+  margin-top: 8.4em;
+}
+.about-left img {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+
+/*********  about section   *********/
+
+.about-right h3 {
+  color: var(--text-);
+  font-size: 3em;
+  font-weight: 500;
+  padding-top: 20% 0;
+}
+.about-right p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.tab-title p {
+  font-weight: normal;
+  font-size: 2.4rem;
+  padding: 0.6em 0em;
+}
+.tab-content li p {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0;
+}
+.tab-content p span {
+  color: red;
+  font-size: 1.7em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+}
+.tab-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3em;
+}
+
+.tab-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-link::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0.6em;
+  background: magenta;
+
+  transition: all 0.3s linear;
+}
+
+.tab-link.active-link::before {
+  width: 50%;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-tab {
+  display: block;
+}
+
+/*********expertise*********/
+.expertise {
+  width: 100%;
+  background-color: beige;
+  overflow-x: hidden;
+}
+
+.btns {
+  margin: 2em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.7em;
+}
+
+.exp-images {
+  gap: 4em;
+}
+
+.exp-image-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp-image-parent img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+/**********overlay**********/
+.exp-image-parent {
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  transform: translateX(-100%);
+  transition: all 0.6s ease-in;
+  overflow: hidden;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-image-parent img:hover {
+  transform: scale(1.2);
+}
+
+.exp-image-parent:hover > .exp-overlay {
+  opacity: 0.7;
+  transform: translateX(0%);
+}
+
+.exp-overlay h3,
+.exp-overlay p {
+  
+  color: white;
+  text-align: center;
+}
+
+.btns .exp-btn-active {
+  background-color: red;
+  color: blue;
+}
+
+.e-img-not-active {
+  display: none;
+}
+
+/***********work ********/
+
+.work {
+  width: 100%;
+  background-color: var(--helper-);
+}
+
+.work-detail {
+  gap: 4em;
+}
+
+.work-detail > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.work .work-detail > div > h2 {
+  font-size: 4em;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.work .work-detail > div > p {
+  font-size: 2.4em;
+  font-weight: 300;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.testimony {
+  max-width: 100%;
+  height: auto;
+}
+
+/*************swiper ***************/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.8em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-post {
+  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msg p {
+  font-size: 2rem;
+  padding: 0.6em 0;
+  position: relative;
+  padding: 1em 1em;
+}
+.msg p::before {
+  content: '\f10d';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  font-family: 'FontAwesome';
+}
+.msg p::after {
+  content: '\f10e';
+  position: absolute;
+  right: -10px;
+  bottom: -3px;
+
+  font-family: 'FontAwesome';
+}
+.img-post {
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.img-post .post h4 {
+  color: var(--helper-);
+  font-size: 2em;
+  line-height: 1.6em;
+  font-weight: 600;
+}
+
+.img-post .post p {
+  color: var(--bg-);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/*********  services section   *********/
+
+.services {
+  overflow-x: hidden;
+}
+
+.services-inner-content {
+  gap: 2em;
+}
+
+.services-inner-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-inner-content .fa {
+  border: 2px solid magenta;
+  padding: 0.6em;
+  /* border radius genrator */
+  border-radius: 28% 72% 84% 16% / 30% 30% 70% 70%;
+}
+
+/*********freelancing  **********/
+
+.freelancing {
+  background-image: url(../asset/about-img.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 3em 3em;
+  text-align: center;
+}
+
+.freelancing .overlay {
+  background-color: var(--bg-);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.freelancing .container {
+  position: relative;
+}
+
+.free-content h2 > span {
+  color: magenta;
+  text-transform: capitalize;
+}
+
+.free-content p {
+  padding: 1em 0;
+  color: var(--text-main);
+}
+/***********contact   **********/
+.contact {
+  overflow-x: hidden;
+}
+.contact .container h3 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+iframe {
+  padding: 1em 0;
+}
+form {
+  margin: 2em auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+form .grid {
+  gap: 1em;
+}
+.form-control {
+  width: 100%;
+}
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 1em 1em;
+}
+
+form > #btn .button-primary:hover {
+  background-color: var(--helper-);
+}
+
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.footer .container {
+  gap: 4em;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  padding: 0.6em 0;
+  text-align: left;
+}
+
+ul li {
+  padding: 0.3em 0;
+}
+
+.footer p,
+.footer ul li,
+.footer ul li i {
+  color: white;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.footer .about {
+  text-align: left;
+  max-width: 70%;
+}
+#footer-email {
+  text-transform: none;
+  
+}
+.footer .services,
+.footer .question {
+  text-align: left;
+}
+
+.footer .services span,
+.footer .question span {
+  margin-left: 1em;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.icon li a {
+  width: 2.4em;
+  height: 2.4em;
+  text-align: center;
+  background: black;
+}
+
+.icon li a i {
+  width: 2.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.icon li a i:hover {
+  transform: scale(1.18);
+}
+
+.icon .fa-facebook {
+  background-color: var(--bg-secondary);
+}
+
+.icon .fa-twitter {
+  background-color: var(--bg-secondary);
+}
+
+.icon .fa-youtube {
+  background-color: #bb0000;
+}
+
+#Copyright {
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 1em 0;
+  text-transform: capitalize;
+}

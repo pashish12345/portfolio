@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/da65eedf8e.js" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/utility.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/main.js"></script>
+    <title>About</title>
+</head>
+
+<body>
+
+    <!-- *************          NavBar    **********  -->
+    <header class="header">
+        <div class="container d-flex">
+            <div class="logo">
+                <p>PORTFOLIO</p>
+            </div>
+            <nav>
+                <ul class="row nav-list">
+                    <li class="nav-items"><a href="./index.html">Home</a></li>
+                    <li class="nav-items"><a href="#">About</a>
+                        <ul class="drop-down">
+                            <li class="nav-subitems"><a href="./about.html">About Page</a></li>
+                            <li class="nav-subitems"><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-items"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-items"><a href="#">Services</a>
+                        <ul class="drop-down">
+                            <li class="nav-subitems"><a href="./services.html">Services Page</a></li>
+                            <li class="nav-subitems"><a href="#">Testimony</a></li>
+                            <li class="nav-subitems"><a href="#">Projects</a></li>
+                            <li class="nav-subitems"><a href="#">Consultancy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-btn">
+                <button class="header-btn boxshadow" type="button">Log In</button>
+            </div>
+            <ul class="open-close-menu">
+                <li id="open"><a href="#" class="menu" >
+                    <i class="fa-sharp  fa-solid fa-bars"></i>
+                </a></li>
+                <li id="close"><a href="#" class="menu" >
+                    <i class="fa-solid  fa-rectangle-xmark"></i>
+                </a></li>
+            </ul>
+            <div class="toggle">
+                <label class="parentlabel">
+                <input type="checkbox" class="input" />
+                <span class="overlay"> </span>
+            </label>
+            </div>
+            
+    </header>
+
+    <!-- *************   about section          **********  -->
+
+    <section class="about-section  section-padding">
+        <div class="container grid-two-col about">
+            <div class="about-left">
+                <img src="asset/about-img1.jpg" alt="about-img" />
+            </div>
+            <div class="about-right">
+                <h3 class="subtitle">About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni magnam dolorum sit quos corrupti
+                    explicabo delectus quibusdam. Earum quod et commodi ullam eveniet possimus facilis. Aliquam,
+                    reprehenderit exercitationem? Alias, fuga.
+                </p>
+                <div class="tab-title">
+                    <p class="tab-link active-link" onclick="handleClick('skill')">Skill</p>
+                    <p class="tab-link" onclick="handleClick('education')">Education</p>
+                    <p class="tab-link" onclick="handleClick('experience')">Experience</p>
+                </div>
+                <div class="tab-content active-tab" id="skill">
+                    <ul>
+                        <li>
+                            <p><span>UI/UX</span> <br> Design Web App Interface</p>
+                        </li>
+                        <li>
+                            <p><span>Web Developement</span> <br> Web App developement</p>
+                        </li>
+                        <li>
+                            <p> <span>App Developement</span> <br> Build Android/ios app </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li>
+                            <p><span>2012</span> <br> ME IT from singapore</p>
+                        </li>
+                        <li>
+                            <p><span>2010</span> <br> BE computer </p>
+                        </li>
+                        <li>
+                            <p><span>2006</span> <br> HSC </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li>
+                            <p><span>2020-current</span> <br> Trainning at ET</p>
+                        </li>
+                        <li>
+                            <p><span>2018-2020</span> <br> Team Lead at TCS </p>
+                        </li>
+                        <li>
+                            <p><span>2016-2018</span> <br> UI/UX executive at Genius </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+     <!-- *************    footer section  **********  -->
+    <footer class="footer section-padding">
+        <div class="container grid-three-col">
+            <div class="about">
+                <h2 class="footer-heading">About Projects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores sequi cumque sapiente
+                    consequatur dolores iusto laborum ducimus, dolorum quos quas officia non earum odit quibusdam.
+                    Neque, accusantium. Aliquid, nisi?</p>
+            </div>
+            <div class="services">
+                <h2 class="footer-heading">Services</h2>
+                <ul>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>Web design</span></li>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>web developement</span></li>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>mern project</span></li>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>consultancy</span></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h2 class="footer-heading"> Ask Question </h2>
+                <ul>
+                    <li><i class="fa-regular fa-location-dot "></i> <span>Pune , India</span> </li>
+                    <li><i class="fa-solid fa-phone"></i><span>91-897952323</span> </li>
+                    <li><i class="fa-solid fa-envelope"></i><span id="footer-email">pashish12345@gmail.com</span></li>
+                </ul>
+            </div>
+
+        </div>
+        <ul class="icon ">
+            <li><a href=""><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+              </ul>
+              <p id="Copyright"> &#169; All the rights reserved </p>
+      
+    </footer>
+
+
+    
+</body>
+
+</html>

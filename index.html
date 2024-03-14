@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Web ">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="">
+    <script src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="css/corner-indicator.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"> -->
+<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://kit.fontawesome.com/da65eedf8e.js" crossorigin="anonymous"></script>
+        
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="./js/main.js"></script>
+    
+
+    <title>Portfolio Website</title>
+</head>
+
+<body  >
+<div class="entire-content">
+
+    <!-- *************          NavBar      **********  -->
+    <header class="header">
+        <div class="container d-flex">
+            <div class="logo">
+                <p>PORTFOLIO</p>
+            </div>
+            <nav>
+                <ul class="row nav-list">
+                    <li class="nav-items"><a href="index.html">Home</a></li>
+                    <li class="nav-items"><a href="#">About</a>
+                        <ul class="drop-down">
+                            <li class="nav-subitems"><a href="about.html">About Page</a></li>
+                            <li class="nav-subitems"><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-items"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-items"><a href="#">Services</a>
+                        <ul class="drop-down">
+                            <li class="nav-subitems"><a href="./services.html">Services Page</a></li>
+                            <li class="nav-subitems"><a href="#">Testimony</a></li>
+                            <li class="nav-subitems"><a href="#">Projects</a></li>
+                            <li class="nav-subitems"><a href="#">Consultancy</a></li>
+
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-btn">
+                <button class="header-btn" type="button">Log In</button>
+            </div>
+
+
+            <ul class="open-close-menu">
+                <li id="open"><a href="#" class="menu" >
+                    <i class="fa-sharp  fa-solid fa-bars"></i>
+                </a></li>
+                <li id="close"><a href="#" class="menu" >
+                    <i class="fa-solid  fa-rectangle-xmark"></i>
+                </a></li>
+            </ul>
+            <div class="toggle">
+                <label class="parentlabel">
+                <input type="checkbox" class="input" />
+                <span class="overlay"> </span>
+            </label>
+            </div>
+    </header>
+
+    <!-- *************      Hero section     **********  -->
+
+    <main class="hero section-padding main" id="home">
+        <div class="container grid-gap grid-two-col">
+            <div class="main-left">
+                <h2>UI/UX Designer</h2>
+                <p>Hi, i am <br> <span class="peter">Peter</span> Founder of
+                    <br> Axis Technology
+                </p>
+            </div>
+            <div class="main-right">
+                <img src="asset/heromain.jpeg" alt="image" loading="lazy">
+            </div>
+        </div>
+            </main>
+
+
+    <!-- *************        Expertise section  start     **********  -->
+    <section class="expertise section-padding">
+        <h2 class="subtitle">My Expertise</h2>
+        <div class="container expertise-main">
+            <div class="btns e-btns">
+                <div class="exp-btn button-primary" data-btn-no="e-btn-1">React</div>
+                <div class="exp-btn button-primary " data-btn-no="e-btn-2">Html</div>
+                <div class="exp-btn button-primary" data-btn-no="e-btn-3">Css</div>
+            </div>
+
+            <div class="exp-images grid-three-col">
+                <div class="exp-image-parent e-btn-1 ">
+                    <div class="image"><img src="asset/port-img8.jpg" alt="image" loading="lazy"></div>
+                    <div class="exp-overlay">
+                        <h3>Project 1</h3>
+                        <p>React Ecommerce web</p>
+                    </div>
+                </div>
+                <div class="exp-image-parent e-btn-1 e-btn-2 ">
+                    <div class="image"><img src="asset/port-img2.webp" alt="image" loading="lazy"></div>
+                    <div class="exp-overlay">
+                        <h3>Project 2</h3>
+                        <p>React + Html Weather </p>
+                    </div>
+                </div>
+                <div class="exp-image-parent e-btn-3 e-btn-2">
+                    <div class="image"><img src="asset/port-img3.webp" alt="image" loading="lazy"></div>
+                    <div class="exp-overlay">
+                        <h3>Project 3</h3>
+                        <p>HTML + css Portfolio</p>
+                    </div>
+                </div>
+                <div class="exp-image-parent e-btn-2">
+                    <div class="image"><img src="asset/port-img9.jpg" alt="image" loading="lazy"></div>
+                    <div class="exp-overlay">
+                        <h3>Project 4</h3>
+                        <p> Html Css Js <br> Corporate Web </p>
+
+                    </div>
+                </div>
+                <div class="exp-image-parent e-btn-1">
+                    <div class="image"><img loading="lazy" src="asset/port-img5.webp" alt="image"></div>
+                    <div class="exp-overlay">
+                        <h3>Project 5</h3>
+                        <p>React Stock </p>
+                    </div>
+                </div>
+                <div class="exp-image-parent e-btn-2 e-btn-3">
+                    <div class="image"><img loading="lazy" src="asset/port1.jpg" alt="image"></div>
+                    <div class="exp-overlay">
+                        <h3>Project 6</h3>
+                        <p>Html Css Js Grocary Shop </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- *************      My  Work section      **********  -->
+
+    <section class="work section-padding">
+        <h2 class="subtitle"> My Work </h2>
+        <div class="container ">
+            <div class="work-detail grid-four-col">
+                <div>
+                    <h2 class="counter">2000+</h2>
+                    <p>Project Completed</p>
+                </div>
+                <div>
+                    <h2 class="counter">6000 +</h2>
+                    <p>Happy Clinets</p>
+                </div>
+                <div>
+                    <h2 class="counter">3600 +</h2>
+                    <p>Before Time Delivary</p>
+                </div>
+                <div>
+                    <h2 class="counter">1500 +</h2>
+                    <p>International Project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *************       Testimony Section       **********  -->
+    <section class="testimony section-padding">
+        <h2 class="subtitle">Testimony </h2>
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="msg">
+                           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, enim!</p>
+                        </div>
+                        <div class="img-post grid-two-col">
+                            <figure class="image">
+                                <img src="asset/te-img1.jpg" alt="image" loading="lazy">
+                            </figure>
+                            <div class="post">
+                                <h4> Ratan </h4>
+                                <p>CEO Graphity Tech</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, enim!</p>
+                        </div>
+                        <div class="img-post grid-two-col">
+                            <figure class="image">
+                                <img src="asset/te-img2.jpg" alt="image" loading="lazy">
+                            </figure>
+                            <div class="post">
+                                <h4> Patrick </h4>
+                                <p>CEO DCN </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, enim!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, labore!</p>
+                        </div>
+                        <div class="img-post grid-two-col">
+                            <figure class="image">
+                                <img src="asset/te-img3.jpg" alt="image" loading="lazy">
+                            </figure>
+
+                            <div class="post">
+                                <h4> Amey N </h4>
+                                <p> GM Caribte Tech </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="msg">
+                           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, enim!
+                            Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="img-post grid-two-col">
+                            <figure class="image">
+                                <img src="asset/te-img4.jpg" alt="image" loading="lazy">
+                            </figure>
+                            <div class="post">
+                                <h4> Jim </h4>
+                                <p> Founder Axis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, enim!</p>
+                        </div>
+                        <div class="img-post grid-two-col">
+                            <figure class="image">
+                                <img src="asset/te-img5.jpg" alt="image" loading="lazy">
+                            </figure>
+                            <div class="post">
+                                <h4> Mike L </h4>
+                                <p>CEO MP Park</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, enim!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                        </div>
+                        <div class="img-post grid-two-col">
+                            <figure class="image">
+                                <img src="asset/te-img6.jpg" alt="image" loading="lazy">
+                            </figure>
+                            <div class="post">
+                                <h4> Amit D </h4>
+                                <p> Consultant Govt IT Cell </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ************  parllex effect -free lancer section     **********  -->
+    <section class="freelancing section-padding">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="free-content">
+                <h2>Always Ready for <span>freelancing</span> work </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="./contact.html" class="button-primary">Contact </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- *************    footer  **********  -->
+    <footer class="footer section-padding">
+        <div class="container grid-three-col">
+            <div class="about">
+                <h2 class="footer-heading ">About Projects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores sequi cumque sapiente
+                    consequatur dolores iusto laborum ducimus, dolorum quos quas officia non earum odit quibusdam.
+                    Neque, accusantium. Aliquid, nisi?</p>
+            </div>
+            <div class="services">
+                <h2 class="footer-heading">Services</h2>
+                <ul>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>Web design</span></li>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>web developement</span></li>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>Mern Project</span></li>
+                    <li><i class="fa-solid fa-circle-dot"></i><span>Consultancy</span></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h2 class="footer-heading"> Ask Question </h2>
+                <ul>
+                    <li><i class="fa-regular fa-location-dot "></i> <span>Pune , India</span> </li>
+                    <li><i class="fa-solid fa-phone"></i><span>91-897952323</span> </li>
+                    <li><i class="fa-solid fa-envelope"></i><span id="footer-email">pashish12345@gmail.com</span> </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="icon ">
+            <li><a href=""><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+        </ul>
+        <p id="Copyright"> &#169; All the rights reserved </p>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"> </script>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script> 
+
+
+</div>
+</body>
+
+</html>
